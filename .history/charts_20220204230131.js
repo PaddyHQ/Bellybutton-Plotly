@@ -128,8 +128,8 @@ function buildCharts(sample) {
       {
         value: washingFreq,
         max: 10,
-       // title: {text: "Belly Button Washing Frequency", subTitle: "Scrubs per Week"},
-        title:{text: "Belly Button Washing Frequency <br><sup>Scrubs per Week</sup>"},
+        title: {text: "Belly Button Washing Frequency"},
+        legendgrouptitle
         type: "indicator",
         mode: "gauge+number",
         gauge: {

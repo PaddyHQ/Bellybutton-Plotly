@@ -126,22 +126,18 @@ function buildCharts(sample) {
     // 4. Create the trace for the gauge chart.
     var gaugeData = [
       {
+        domain: {x:[0,1],y:[0,1]},
         value: washingFreq,
         max: 10,
-       // title: {text: "Belly Button Washing Frequency", subTitle: "Scrubs per Week"},
-        title:{text: "Belly Button Washing Frequency <br><sup>Scrubs per Week</sup>"},
+        title: {text: "Belly Button Washing Frequency", subTitle: "Scrubs per Week"},
         type: "indicator",
         mode: "gauge+number",
-        gauge: {
-          axis: {range:[0,10], tick0:0, dtick:2},
-          bar: {color: "black"},
-          steps: [
-            { range: [0, 2], color: "red" },
-            { range: [2, 4], color: "orange" },
-            { range: [4, 6], color: "yellow" },
-            { range: [6, 8], color: "green" },
-            { range: [8, 10], color: "darkgreen" }]
-        }
+        steps: [
+          { range: [0, 1], color: "red" },
+          { range: [2, 3], color: "orange" },
+          { range: [4, 5], color: "yellow" },
+          { range: [6, 7], color: "green" },
+          { range: [8, 9], color: "green" }]
       }
     ];
     
