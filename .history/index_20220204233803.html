@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
-  <div class="container bg-danger">
+<body class="bg-danger">
+  <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-12 jumbotron text-center bg-danger" style="background-image: url(./images/Capture.PNG)">
+      <div class="col-xs-12 col-md-12 jumbotron text-center bg-danger">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
@@ -24,7 +24,7 @@
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="col-xs-6 col-md-12 panel panel-primary">
+        <div class="col-xs-6 col-md-12 panel panel-danger">
           <div class="panel-heading">
             <h3 class="panel-title">Demographic Info</h3>
           </div>
@@ -38,13 +38,11 @@
         <div id="gauge"></div>
       </div>
     </div>
-    <br/>
     <div class="row">
       <div class="col-xs-12 col-md-12 block-center">
         <div id="bubble"></div>
       </div>
     </div>
-    <br/>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>

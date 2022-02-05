@@ -100,7 +100,7 @@ function buildCharts(sample) {
     Plotly.newPlot("bar", barData, barLayout) 
 
     // 1. Create the trace for the bubble chart.
-    var desired_maximum_marker_size = 16
+    var desired_maximum_marker_size = 40
     var bubbleData = [
       {
         x: otuIds,
